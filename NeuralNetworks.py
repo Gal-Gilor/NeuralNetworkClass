@@ -123,6 +123,6 @@ class RegressionNetwork(object):
         weights_to_output = self.weights_hidden_to_output
 
         # forward pass a set of data
-        final_outputs, _ = feed_forward(features)
+        final_outputs, _ = self.feed_forward(features)
 
         return final_outputs
